@@ -1,0 +1,20 @@
+Check the EEG connection:
+1) Run BCI.Matlab\CommonMatlabFunctions\ReadAmplifer.m
+  o	options.WaitStart = 0;
+  o	options.SaveEEG = 0;
+  o	options.UpdateExperimentSessions = 0;
+1) Run BCI.Matlab\CommonMatlabFunctions\PlotStream.m
+
+Start the experiment:
+1) Run BCI.Matlab\CommonMatlabFunctions\ReadAmplifiers.m
+    o	options.WaitStart = 1;
+    o	options.SaveEEG = 1;
+    o	options.UpdateExperimentSessions = 1;
+
+2) Run BCI.Matlab\MainRealtime.m
+3) Run BCI.Unity\Synchrony BCI.exe
+4) Start experiment by pressing the space bar in Unity
+
+Note:
+The program requires g.NEEDaccess MATLAB API 
+Data for the experiment is stored on the Open Science Framework (OSF)
